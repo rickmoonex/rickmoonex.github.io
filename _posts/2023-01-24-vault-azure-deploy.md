@@ -1,5 +1,5 @@
 ---
-title: "Highly Available HashiCorp Vault on Azure #1, deploying with Terraform"
+title: "Highly Available HashiCorp Vault on Azure - #1 deploying with Terraform"
 date: 2023-01-24
 permalink: /posts/2023/01/vault-azure-deploy/
 tags:
