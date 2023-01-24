@@ -79,7 +79,7 @@ analytics:
 # Site Author
 author:
   name: "Rick Moonen"
-  avatar: "profile.png"
+  avatar: "profile.jpeg"
   bio: "This is me!"
   location: "Eindhoven, Netherlands"
   employer:
@@ -100,7 +100,7 @@ author:
   instagram:
   impactstory: #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/rick-moonen-01b6361bb/
   orcid:
   pinterest:
   soundcloud:
