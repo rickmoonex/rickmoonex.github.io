@@ -74,7 +74,7 @@ social:
 analytics:
   provider: "google-universal" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id:
+    tracking_id: G-JLHT10P82C
 
 # Site Author
 author:
@@ -100,7 +100,7 @@ author:
   instagram:
   impactstory: #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
-  linkedin: https://www.linkedin.com/in/rick-moonen-01b6361bb/
+  linkedin: rick-moonen-01b6361bb
   orcid:
   pinterest:
   soundcloud:
