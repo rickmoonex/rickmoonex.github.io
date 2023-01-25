@@ -31,8 +31,6 @@ When these are met we can consider our cluster Highly-Available, Secure, and Pro
 
 Now that we have set our criteria, let's get into the design of the cluster. I've created a diagram of the infrastructure that we're going to use:
 
-<img src='/images/vault-azure-arch.png'>
-
 As you can see, it's a pretty simple design. I chose for simplicity because it's more manageable when scaling the cluster.
 
 Let's dive into each component of this design:
