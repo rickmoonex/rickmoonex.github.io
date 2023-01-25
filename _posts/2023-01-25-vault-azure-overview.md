@@ -7,7 +7,7 @@ tags:
   - HashiCorp Vault
 ---
 
-This is the first blog of a new series about running a highly available [HashiCorp Vault](https://www.vaultproject.io) cluster on Microsoft Azure. This series will cover a lot, including: Design, Provisioning, Configuration and Maintenance.
+This is the first blog of a new series about running a highly available [HashiCorp Vault](https://www.vaultproject.io) cluster on Microsoft Azure. This series will cover a lot, including: Design, Provisioning, Configuration, and Maintenance.
 
 In this first installment we are going to discuss the technical design of the Vault cluster that we are building. So let's get started!
 
@@ -23,7 +23,7 @@ The cluster must meet de following criteria:
 - Provides an automatic unsealing method for the Vault, eliminating the need to manually unseal nodes when the cluster scales;
 - Allows for Azure AD integrations through Machine Identities.
 
-When these are met we can consider our cluster Highly-Available, Secure and Production-Ready.
+When these are met we can consider our cluster Highly-Available, Secure, and Production-Ready.
 
 ## Design
 
@@ -45,7 +45,7 @@ For security reasons I have chosen to utilize a NAT gateway instead of giving ea
 
 ### Key Vault
 
-The key vault plays a critical role in our Vault cluster. It will hold the key that is used for unsealing the Vault servers. It also holds the root CA and server certificates needed to encrypt intra-cluster traffic. This key vault also contains the certificate that the Application Gateway will use to communicate with the servers, and the certificate that it will attach to it's HTTPS listener.
+The key vault plays a critical role in our Vault cluster. It will hold the key that is used for unsealing the Vault servers. It also holds the root CA and server certificates needed to encrypt intra-cluster traffic. This key vault also contains the certificate that the Application Gateway will use to communicate with the servers, and the certificate that will be attached to it's HTTPS listener.
 
 ### Bastion Host
 
@@ -59,7 +59,7 @@ The Virtual Machine Scale Set is where all the magic happens. This is where our 
 
 We will provision these machines by creating a bash script that we will pass into the VM using the `user-data` property. This initiates the given script trough cloud-init. The script will authenticate the machine with the Azure CLI through a Managed Identity. It will then be able to use that identity to communicate with the Azure Key Vault to retrieve the needed certificates for mTLS and the unseal key. When this is done it will install and configure Vault with the retrieved secrets from Key Vault.
 
-We will also install an extension into this scale set that is able to poll the Vault API endpoint to see if the machine is up and running. This can be used in monitoring, alerting and troubleshooting.
+We will also install an extension into this scale set that is able to poll the Vault API endpoint to see if the machine is up and running. This can be used in monitoring, alerting, and troubleshooting.
 
 #### VM Storage
 
