@@ -79,3 +79,5 @@ I recommend starting with the `Standard_D2s_v3` or `Standard_D4s_v3` when initia
 _"What's next?"_ you may ask. Well, deploying of course!
 
 In the next installment of this series we will cover the provisioning of this cluster using Terraform, so stay tuned!
+
+**If you find this useful please share with the buttons below. Thanks!**
