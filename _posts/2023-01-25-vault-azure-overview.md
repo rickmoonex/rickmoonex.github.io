@@ -2,6 +2,8 @@
 title: "Highly Available HashiCorp Vault on Azure - #1 architectural overview"
 date: 2023-01-25
 permalink: /posts/2023/01/vault-azure-deploy/
+header:
+  image: /images/1632350720-vault-share.png
 tags:
   - Microsoft Azure
   - HashiCorp Vault
